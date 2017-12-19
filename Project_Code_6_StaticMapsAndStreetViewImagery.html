@@ -230,6 +230,8 @@
             infowindow.marker = null;
           });
           var streetViewService = new google.maps.StreetViewService();
+          //Give a radius to try to use images within the radius,
+          //in case no images of the marker exists.
           var radius = 50;
           // In case the status is OK, which means the pano was found, compute the
           // position of the streetview image, then calculate the heading, then get a
@@ -298,7 +300,7 @@
 
     <script async defer
         src=
-        "https://maps.googleapis.com/maps/api/js?key=MYAPIKEY&libraries=geometry&v=3&callback=initMap">
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyCuv5JwkXy2ha8gF8M98mpT4Xzx-iPB160&libraries=geometry&v=3&callback=initMap">
     </script>
 
   </body>
