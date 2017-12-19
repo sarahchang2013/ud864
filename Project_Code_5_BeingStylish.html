@@ -78,6 +78,7 @@
             ]
           },{
             featureType: 'administrative',
+            //Element of the feature that is to be changed
             elementType: 'labels.text.stroke',
             stylers: [
               { color: '#ffffff' },
@@ -141,6 +142,7 @@
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.7413549, lng: -73.9980244},
           zoom: 13,
+          //Add the array of styles defined above to the map
           styles: styles,
           mapTypeControl: false
         });
@@ -251,7 +253,7 @@
 
     <script async defer
         src=
-        "https://maps.googleapis.com/maps/api/js?key=MYAPIKEY&v=3&callback=initMap">
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyCuv5JwkXy2ha8gF8M98mpT4Xzx-iPB160&v=3&callback=initMap">
     </script>
 
   </body>
