@@ -63,6 +63,7 @@
           marker.addListener('click', function() {
             populateInfoWindow(this, largeInfowindow);
           });
+          //Extend the map's boundaries each time according to the marker
           bounds.extend(markers[i].position);
         }
         // Extend the boundaries of the map for each marker
@@ -87,7 +88,7 @@
     </script>
 
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=MYAPIKEY&v=3&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuv5JwkXy2ha8gF8M98mpT4Xzx-iPB160&v=3&callback=initMap">
     </script>
 
   </body>
