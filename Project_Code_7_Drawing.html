@@ -247,6 +247,7 @@
         drawingManager.addListener('overlaycomplete', function(event) {
           // First, check if there is an existing polygon.
           // If there is, get rid of it and remove the markers
+          //Create multiple polygons(polygon1, 2, etc) if needed.
           if (polygon) {
             polygon.setMap(null);
             hideListings(markers);
@@ -342,15 +343,17 @@
         return markerImage;
       }
 
-      // This shows and hides (respectively) the drawing options.
+      // This hides and shows (respectively) the drawing options.
       function toggleDrawing(drawingManager) {
         if (drawingManager.map) {
+          //hide the drawing tools
           drawingManager.setMap(null);
           // In case the user drew anything, get rid of the polygon
           if (polygon !== null) {
             polygon.setMap(null);
           }
         } else {
+          //show drawing tools
           drawingManager.setMap(map);
         }
       }
@@ -371,7 +374,7 @@
 
     <script async defer
         src=
-        "https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=MYAPIKEY&v=3&callback=initMap">
+        "https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyCuv5JwkXy2ha8gF8M98mpT4Xzx-iPB160&v=3&callback=initMap">
     </script>
 
   </body>
