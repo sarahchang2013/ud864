@@ -678,7 +678,7 @@
             icon: icon,
             title: place.name,
             position: place.geometry.location,
-            id: place.id
+            id: place.place_id
           });
           // If a marker is clicked, do a place details search on it in the next function.
           marker.addListener('click', function() {
